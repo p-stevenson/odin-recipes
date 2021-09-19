@@ -1,0 +1,39 @@
+/* * {
+    border: 5px solid lightgreen;
+} */
+
+body {
+    /* border: 5px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title, .recipe-titles {
+    color: hsl(210, 13%, 24%);
+    text-align: center;
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    font-size: 64px;
+}
+
+hr {
+    border: 1px solid hsl(210, 13%, 24%);
+    width: 120px;
+    padding-top: 0%;
+}
+
+.recipe-links {
+    /* border: 5px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-titles {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 0 0;
+}
+
+img {
+    border: 3px double hsl(210, 13%, 24%)
+}
