@@ -1,20 +1,23 @@
- /* * {
+ * {
     border: 5px solid lightgreen;
-} */
+}
 
 body {
-    /* border: 5px solid red; */
+    border: 5px solid blue;
     display: flex;
     flex-direction: column;
 }
 
-.main-title {
+.main-title, .home-button{
     color: hsl(210, 13%, 24%);
-    text-align: center;
     font-family: 'Bebas Neue', Arial, sans-serif;
-    font-size: 64px;
-    margin: 2% 0 0 0;
     /* border-color: red; */
+}
+
+.main-title {
+    text-align: center;
+    margin: 2% 0 0.5% 0;
+    font-size: 64px;
 }
 
 .main-title a:link {
@@ -26,11 +29,23 @@ body {
     color: hsl(210, 13%, 24%);
 }
 
+.home-button {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0 0 -10px 0;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid hsl(210, 13%, 24%);
+    margin: 0;
+    padding: 0;
+}
 .recipe-links-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 5px solid red; */
+    border: 5px solid red;
     max-width: 100%;
 }
 
@@ -38,9 +53,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    border: 5px solid yellow;
+
 }
 
-.txt-link {
+.txt-link, .recipe-title {
     /* border-color: blue; */
     font-family: 'Amatic SC', Arial, sans-serif;
     font-size: 38px;
@@ -60,6 +77,12 @@ body {
     color: hsl(210, 13%, 24%);
 }
 
+.recipe-title {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0;
+}
+
 img {
     border: 3px solid hsl(210, 13%, 24%);
     max-width: 100%;
@@ -67,7 +90,7 @@ img {
 }
 
 @media (max-width: 720px) {
-    .main-title {
+    .main-title, .recipe-title {
         font-size: 48px;
     }
 
@@ -81,7 +104,7 @@ img {
 }
 
 @media (max-width: 360px) {
-    .main-title {
+    .main-title, .recipe-title {
         font-size: 32px;
     }
     
