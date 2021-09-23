@@ -1,6 +1,9 @@
- /* * {
+/* I use lots of borders to visualise elements the wildcard below works as an easy method for toggling them on and off. Each element just needs to have a border color applied.
+*/
+
+* {
     border: 5px solid lightgreen;
-} */
+}
 
 body {
     display: flex;
@@ -8,7 +11,7 @@ body {
     border-color:  blue;
 }
 
-.main-title, .home-button{
+.main-title, .home-link{
     color: hsl(210, 13%, 24%);
     font-family: 'Bebas Neue', Arial, sans-serif;
     border-color: purple;
@@ -20,6 +23,17 @@ body {
     font-size: 64px;
 }
 
+.home-link-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.home-link {
+    font-weight: 700;
+    font-size: 42px;
+    margin: 0 0 -10px 0;
+}
+
 .main-title a:link {
     color: hsl(210, 13%, 24%);
     /* border-color: pink; */
@@ -29,11 +43,6 @@ body {
     color: hsl(210, 13%, 24%);
 }
 
-.home-button {
-    font-weight: 700;
-    font-size: 42px;
-    margin: 0 0 -10px 0;
-}
 
 hr {
     width: 100%;
@@ -41,6 +50,7 @@ hr {
     padding: 0;
     border: 1px solid hsl(210, 13%, 24%);
 }
+
 .recipe-links-container {
     display: flex;
     flex-direction: column;
@@ -77,34 +87,55 @@ hr {
 .recipe-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-color: red;
 }
 
 .recipe-title {
     font-size: 48px;
     text-align: center;
-    margin-top: 0;
+    margin: 4% 0 2% 0;
     border-color: salmon;
 }
 
-.main-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-color: rgb(29, 195, 201);
-}
 img {
     max-width: 100%;
     height: auto;
+    margin: 0 0 2% 0;
     border: 3px solid hsl(210, 13%, 24%);
 }
 
-.description-container {
+.ingredients-container {
     border-color: indigo;
+}
+
+.ingredients-container h2 {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    color: hsl(210, 13%, 24%);
+}
+
+.ingredients-container p {
+    font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.ingredients-container li {
+    font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 .steps-container {
     border-color: rgb(235, 0, 184);
+}
+
+.steps-container h2 {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    color: hsl(210, 13%, 24%);
+}
+
+.steps-container ul {
+    font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 @media (max-width: 720px) {
